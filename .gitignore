@@ -40,6 +40,7 @@
 
 # Visual Studio Code-specific files
 .vscode/
+.vs/
 
 # Rider specific
 .idea/
