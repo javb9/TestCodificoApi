@@ -22,7 +22,7 @@ namespace TecnicalTestCodifico.Models
         {
             public int OrderId { get; set; }
             public string RequiredDate { get; set;}
-            public string ShippedDate { get; set;}
+            public string? ShippedDate { get; set;}
             public string ShipName { get; set;}
             public string shipaddress { get; set; }
             public string shipcity { get; set; }

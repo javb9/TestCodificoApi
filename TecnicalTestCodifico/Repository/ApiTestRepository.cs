@@ -97,7 +97,7 @@ namespace TecnicalTestCodifico.Repository
                                 ClientOrders order = new ClientOrders();
                                 order.OrderId = reader.GetInt32(0);
                                 order.RequiredDate = reader.GetDateTime(1).ToString();
-                                order.ShippedDate = reader.GetDateTime(2).ToString();
+                                order.ShippedDate = reader.IsDBNull(2) ? null : reader.GetDateTime(2).ToString();
                                 order.ShipName = reader.GetString(3);
                                 order.shipaddress = reader.GetString(4);
                                 order.shipcity = reader.GetString(5);
